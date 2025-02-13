@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Character Set and Viewport (Always First) -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Frontend Developer Portfolio - Specializing in responsive web design, React, Angular, and modern JavaScript development."
+    />
+    <meta
+      name="keywords"
+      content="frontend developer, web development, React, Angular, JavaScript, portfolio, Edin Durak, Digital Solutions"
+    />
+    <meta name="author" content="Edin Durak" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Theme Color for browsers -->
+    <meta name="theme-color" content="#0056b3" />
+
+    <!-- Existing title -->
+    <title>Edin Durak - Frontend Developer Portfolio</title>
+    <link rel="icon" type="image/png" href="./assets/images/icon-favicon.png" />
+
+    <!-- Early Connections (Preconnect) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin />
+    <link rel="preconnect" href="https://ka-f.fontawesome.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="css/style.css" as="style" />
+    <link rel="preload" href="js/main.js" as="script" />
+
+    <!-- Critical CSS First -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Font Awesome (Deferred) -->
+    <script
+      src="https://kit.fontawesome.com/e3c7cb3ed3.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <!-- Add this in your head section, after the existing preconnect tags -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="light-mode">
+    <!-- Loading Animation -->
+    <div class="loader">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#hero">
+          <img
+            src="./assets/images/logo-no-background.png"
+            alt="Logo"
+            class="logo-img"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-vh-100 d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 me-auto">
+            <h1 class="display-4 fw-bold text-white mb-3">
+              Move <span class="highlight-word">forward</span> with digital
+              solutions
+            </h1>
+            <p class="hero-paragraph fs-4 text-white mb-4">
+              Let's move your business forward together. I create modern digital
+              solutions that help companies evolve and succeed in today's
+              fast-paced digital landscape.
+            </p>
+            <div
+              class="d-flex gap-3 justify-content-center justify-content-lg-start flex-wrap"
+            >
+              <a href="#contact" class="btn btn-primary btn-lg">Start Moving</a>
+              <a
+                href="#contact"
+                class="btn consulting-btn btn-outline-light btn-lg"
+                >Get Free Consultation</a
+              >
+            </div>
+          </div>
+          <div
+            class="col-lg-5 mt-5 mt-lg-0 align-self-end position-relative z-index-1"
+          >
+            <!-- Main programming illustration -->
+            <img
+              src="./assets/images/programming.svg"
+              alt="Programming Illustration"
+              class="hero-main-image programming img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="text-center mb-5">Skills & Expertise</h2>
+        <div class="row g-4">
+          <!-- Core Frontend Skills -->
+          <div class="col-4 col-md-3">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-html5"></i>
+              </div>
+              <h3 class="d-none d-md-block">HTML5</h3>
+            </div>
+          </div>
+          <div class="col-4 col-md-3">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-css3"></i>
+              </div>
+              <h3 class="d-none d-md-block">CSS3</h3>
+            </div>
+          </div>
+          <div class="col-4 col-md-3">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-bootstrap"></i>
+              </div>
+              <h3 class="d-none d-md-block">Bootstrap 5</h3>
+            </div>
+          </div>
+          <div class="col-4 col-md-3">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-sass"></i>
+              </div>
+              <h3 class="d-none d-md-block">SCSS</h3>
+            </div>
+          </div>
+          <div class="col-4 col-md-3">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-css3"></i>
+              </div>
+              <h3 class="d-none d-md-block">TailwindCSS</h3>
+            </div>
+          </div>
+
+          <!-- Development Tools -->
+          <div class="col-4 col-md-3">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <h3 class="d-none d-md-block">GitHub</h3>
+            </div>
+          </div>
+          <div class="col-4 col-md-3">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-robot"></i>
+              </div>
+              <h3 class="d-none d-md-block">AI Tools</h3>
+            </div>
+          </div>
+
+          <!-- Programming & Frameworks -->
+          <div class="col-4 col-md-3">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-js"></i>
+              </div>
+              <h3 class="d-none d-md-block">JavaScript</h3>
+            </div>
+          </div>
+          <div class="col-4 col-md-3">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-npm"></i>
+              </div>
+              <h3 class="d-none d-md-block">NPM</h3>
+            </div>
+          </div>
+          <div class="col-4 col-md-3">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-react"></i>
+              </div>
+              <h3 class="d-none d-md-block">React</h3>
+            </div>
+          </div>
+
+          <!-- E-commerce -->
+          <div class="col-4 col-md-3">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <h3 class="d-none d-md-block">Shopware</h3>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="col-4 col-md-3">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-comments"></i>
+              </div>
+              <h3 class="d-none d-md-block">Communication</h3>
+            </div>
+          </div>
+
+          <div class="col-4 col-md-3">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <h3 class="d-none d-md-block">Fast Turnaround</h3>
+            </div>
+          </div>
+          <div class="col-4 col-md-3">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-sync-alt"></i>
+              </div>
+              <h3 class="d-none d-md-block">Adaptability</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-light">
+      <div class="container">
+        <h2 class="text-center mb-2 mb-lg-3">Services</h2>
+        <div class="text-center mb-4">
+          <span class="badge rounded-pill bg-primary mb-3"
+            >Frontend Specialist</span
+          >
+          <p class="lead">
+            Specialized in frontend development with a focus on creating
+            beautiful, responsive user interfaces
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <h3>Frontend Development</h3>
+              <p>
+                Expert implementation of modern frontend technologies including
+                HTML5, CSS3, and JavaScript frameworks.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <h3>UI/UX Redesign</h3>
+              <p>
+                Transform your website with a modern, user-friendly design that
+                looks great and helps convert more visitors into customers.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3>Responsive Design</h3>
+              <p>
+                Ensure your website looks great and functions perfectly on all
+                devices with a mobile-first approach.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-tools"></i>
+              </div>
+              <h3>Project Collaboration</h3>
+              <p>
+                Dedicated assistance and mentoring for your development team,
+                helping solve complex frontend challenges and improve coding
+                practices.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>Website Optimization</h3>
+              <p>
+                Performance optimization and best practices implementation for
+                your website's performance.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <h3>Tech Stack Integration</h3>
+              <p>
+                Quick adaptation to your tech stack to seamlessly integrate with
+                your existing team.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+      <div class="container">
+        <h2 class="text-center mb-5">Client Testimonials</h2>
+        <div class="text-center mb-4">
+          <div class="badges-wrapper">
+            <span class="badge rounded-pill bg-success me-3">
+              <i class="fab fa-upwork me-2"></i>Upwork Verified
+            </span>
+            <span class="badge rounded-pill bg-primary">
+              <i class="fas fa-award me-2"></i>100% Job Success
+            </span>
+          </div>
+          <p class="success-rate-text text-success mt-3">
+            Perfect track record with 12 five-star reviews across 15+ completed
+            jobs
+          </p>
+        </div>
+
+        <div class="testimonial-slider">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div
+                id="testimonialCarousel"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide-to="4"
+                    aria-label="Slide 5"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="testimonial-card">
+                      <div class="testimonial-content">
+                        <div class="rating mb-3">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-text-wrapper">
+                          <p class="testimonial-text">
+                            "Same as the first time working with Edin, his work
+                            is outstanding and he his highly skilled. His
+                            understanding in solving problems and
+                            professionalism in managing all tasks makes working
+                            with him a breeze. JOB WELL DONE :)"
+                          </p>
+                        </div>
+                        <div class="testimonial-author">
+                          <h3>Alex P.</h3>
+                          <p class="mb-0">Shopware 6: Frontend Development</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="testimonial-card">
+                      <div class="testimonial-content">
+                        <div class="rating mb-3">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-text-wrapper">
+                          <p class="testimonial-text">
+                            "Edin was an excellent hire. Look forward to working
+                            with him more. His attention to detail and frontend
+                            expertise made our project a success."
+                          </p>
+                        </div>
+                        <div class="testimonial-author">
+                          <h3>Matt D.</h3>
+                          <p class="mb-0">React/Tailwind Project</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="testimonial-card">
+                      <div class="testimonial-content">
+                        <div class="rating mb-3">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-text-wrapper">
+                          <p class="testimonial-text">
+                            "Great job, great communication"
+                          </p>
+                        </div>
+                        <div class="testimonial-author">
+                          <h3>Denis F.</h3>
+                          <p class="mb-0">CampGuest redesign of web app</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="testimonial-card">
+                      <div class="testimonial-content">
+                        <div class="rating mb-1">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-text-wrapper">
+                          <p class="testimonial-text">
+                            "It was a great experience working with Edin! He was
+                            100% available for a bug that I needed fixed, and
+                            even though our testing environment couldn't let him
+                            test his code online, he did everything on his end,
+                            and he kept at it until he fixed the bug. I would
+                            definitely recommend him for any JS work, and will
+                            definitely contact him again if..."
+                          </p>
+                        </div>
+                        <div class="testimonial-author">
+                          <h3>Jonathan A.</h3>
+                          <p class="mb-0">
+                            JavaScript Expert Needed for Fixing Small Graphic
+                            Bug
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="testimonial-card">
+                      <div class="testimonial-content">
+                        <div class="rating mb-3">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-text-wrapper">
+                          <p class="testimonial-text">
+                            "Edin is a great freelancer and did an excellent job
+                            with the html/css fix I hired him to do. He gave
+                            good suggestions for the site and I'd use his
+                            services gladly again. A solid 5/5 job on
+                            everything."
+                          </p>
+                        </div>
+                        <div class="testimonial-author">
+                          <h3>Mikael B.</h3>
+                          <p class="mb-0">
+                            Quick fix to responsive menu that glitches
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-controls">
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev"
+                  >
+                    <i class="fas fa-chevron-left"></i>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next"
+                  >
+                    <i class="fas fa-chevron-right"></i>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Featured Projects</h2>
+
+        <!-- Project Filters -->
+        <div class="project-filters text-center mb-4">
+          <button
+            class="btn btn-filter active"
+            data-filter="all"
+            aria-label="Show all projects"
+          >
+            All
+          </button>
+          <button
+            class="btn btn-filter"
+            data-filter="maintenance"
+            aria-label="Show maintenance and fixes projects"
+          >
+            Maintenance & Fixes
+          </button>
+          <button
+            class="btn btn-filter"
+            data-filter="design-to-code"
+            aria-label="Show design to code projects"
+          >
+            Design to Code
+          </button>
+          <button
+            class="btn btn-filter"
+            data-filter="shopware"
+            aria-label="Show shopware projects"
+          >
+            Shopware
+          </button>
+          <button
+            class="btn btn-filter"
+            data-filter="other"
+            aria-label="Show other projects"
+          >
+            Other
+          </button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="row g-4 projects-grid">
+          <!-- Project 1 -->
+          <div class="col-md-6 col-lg-4 project-item maintenance">
+            <div
+              class="project-card h-100"
+              role="article"
+              aria-label="Implementing changes to a React/Tailwind project"
+              data-project-title="Implementing changes to a React/Tailwind project"
+              data-project-role="Make changes to a React/Tailwind project"
+              data-project-description="Redesigning Navigation & Improving Performance in a React project with Tailwind CSS. The goal was to make the navigation more user-friendly. In addition, I saw more things I could improve and made the footer responsive and improved the performance of the website. Client was pleased with the results and the improvements, so asked me to fix accordion elements smoothly."
+              data-project-tasks="Made changes to the navigation, Improved smoothness of accordion elements, Made the footer responsive, Improved performance"
+              data-project-tech="React,Tailwind CSS,JavaScript"
+              data-project-vimeo="https://vimeo.com/1054911735/20b69c6558"
+            >
+              <div
+                class="project-image"
+                role="img"
+                aria-label="Thumbnail of a React/Tailwind project"
+              >
+                <img
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  data-src="./assets/images/React-app-thumbnail.jpg"
+                  alt="Thumbnail of a React/Tailwind project"
+                  class="img-fluid lazy"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <button
+                      class="btn btn-light btn-sm me-2 view-project"
+                      aria-label="View project details"
+                    >
+                      <i class="fas fa-info-circle"></i> Details
+                    </button>
+                    <button
+                      class="btn btn-light btn-sm watch-demo"
+                      aria-label="Watch project demo"
+                    >
+                      <i class="fas fa-play-circle"></i> Watch Demo
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info d-flex flex-column">
+                <h3 role="heading" aria-level="3">React/Tailwind project</h3>
+                <p class="flex-grow-1">
+                  Redesigning Navigation & Improving Performance in a React
+                  project with Tailwind CSS. The goal..
+                </p>
+                <div class="project-tags mt-auto">
+                  <span class="badge bg-primary">React </span>
+                  <span class="badge bg-primary">Tailwind CSS</span>
+                  <span class="badge bg-primary">Responsive Design</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 (Angular Project) -->
+          <div class="col-md-6 col-lg-4 project-item design-to-code">
+            <div
+              class="project-card h-100"
+              role="article"
+              aria-label="E-PRTR Angular Project"
+              data-project-title="E-PRTR Angular Project"
+              data-project-role="Assist in a project as a frontend developer"
+              data-project-description="Collaborated with a team of developers to transform Figma designs into a functional platform. Handled routing implementation across pages, ensured responsive design, and followed SEO best practices. Communication and version control were managed through GitHub for smooth team collaboration."
+              data-project-tasks="Implemented routing across pages,Transformed Figma designs into functional components,Ensured responsive design,Followed SEO best practices,Collaborated through GitHub"
+              data-project-tech="Angular,Tailwind CSS,JavaScript,GitHub"
+              data-project-demo="https://e-prtr.ba/pocetna"
+            >
+              <div
+                class="project-image"
+                role="img"
+                aria-label="Thumbnail of an Angular project"
+              >
+                <img
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  data-src="./assets/images/Angular-app-thumbnail.jpg"
+                  alt="E-PRTR Angular Project"
+                  class="img-fluid lazy"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <button
+                      class="btn btn-light btn-sm me-2 view-project"
+                      aria-label="View project details"
+                    >
+                      <i class="fas fa-info-circle"></i> Details
+                    </button>
+                    <a
+                      href="https://e-prtr.ba/pocetna"
+                      class="btn btn-light btn-sm"
+                      target="_blank"
+                      aria-label="View live demo"
+                    >
+                      <i class="fas fa-link"></i> Live Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info d-flex flex-column">
+                <h3 role="heading" aria-level="3">E-PRTR Angular Project</h3>
+                <p class="flex-grow-1">
+                  Collaborated with a team of developers to transform Figma
+                  designs into a functional platform. Handled...
+                </p>
+                <div class="project-tags mt-auto">
+                  <span class="badge bg-primary">Angular</span>
+                  <span class="badge bg-primary">Tailwind CSS</span>
+                  <span class="badge bg-primary">GitHub</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 (Shopware Example) -->
+          <div class="col-md-6 col-lg-4 project-item shopware">
+            <div
+              class="project-card h-100"
+              role="article"
+              aria-label="Shopware Theme"
+              data-project-title="Shopware Theme"
+              data-project-role="Shopware Frontend Developer"
+              data-project-description="For the Raumweltenheiss shop, I updated the header, footer, and managed categories via the
+              Shopware Admin. I created a plugin theme, added assets, and handled text translations. As part of
+              the migration from Shopware 5 to 6, I updated image links and adjusted category layouts based on
+              the live Shopware 5 version"
+              data-project-tasks="Updated header and footer,Managed categories via Shopware Admin,Created plugin theme,Added assets,Handled text translations,Updated image links,Adjusted category layouts"
+              data-project-tech="Shopware,JavaScript,SCSS,Bootstrap,CMS Admin"
+              data-project-demo="https://shop.raumweltenheiss.de/"
+            >
+              <div
+                class="project-image"
+                role="img"
+                aria-label="Thumbnail of a Shopware Theme"
+              >
+                <img
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  data-src="./assets/images/Shopware-project-one-thumbnail.jpg"
+                  alt="Shopware Theme"
+                  class="img-fluid lazy"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <button
+                      class="btn btn-light btn-sm me-2 view-project"
+                      aria-label="View project details"
+                    >
+                      <i class="fas fa-info-circle"></i> Details
+                    </button>
+                    <a
+                      href="https://shop.raumweltenheiss.de/"
+                      class="btn btn-light btn-sm"
+                      target="_blank"
+                      aria-label="View live demo"
+                    >
+                      <i class="fas fa-link"></i> Live Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info d-flex flex-column">
+                <h3 role="heading" aria-level="3">Shopware Theme</h3>
+                <p class="flex-grow-1">
+                  For the Raumweltenheiss shop, I updated the header, footer,
+                  and managed categories via the...
+                </p>
+                <div class="project-tags mt-auto">
+                  <span class="badge bg-primary">Shopware</span>
+                  <span class="badge bg-primary">SCSS</span>
+                  <span class="badge bg-primary">CMS Admin</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 (Shopify Example) -->
+          <div class="col-md-6 col-lg-4 project-item other">
+            <div
+              class="project-card h-100"
+              role="article"
+              aria-label="Ping-pong game logic in Shopify Theme"
+              data-project-title="Ping-pong game logic in Shopify Theme"
+              data-project-role="Shopify Frontend Developer"
+              data-project-description="I received a Figma design and developed a Ping Pong game based on it, ensuring it was optimized for all screen sizes and seamlessly integrated into an existing Shopify website. Using my skills in HTML, CSS, and JavaScript, I created the game locally. Once the client approved it, I successfully implemented the game into the Shopify store. "
+              data-project-tasks="Implement Figma design,Create ping pong game,Develop JavaScript logic,Optimize responsiveness,Integrate with Shopify,Test locally,Deploy to production"
+              data-project-tech="Shopify,JavaScript,HTML,CSS,Canvas API, Liquid"
+              data-project-demo="https://getultrablu.com/"
+            >
+              <div
+                class="project-image"
+                role="img"
+                aria-label="Thumbnail of a Ping Pong game"
+              >
+                <img
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  data-src="./assets/images/Ultrablue-thumbnail.jpg"
+                  alt="Ultrablue Ping Pong Game"
+                  class="img-fluid lazy"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <button
+                      class="btn btn-light btn-sm me-2 view-project"
+                      aria-label="View project details"
+                    >
+                      <i class="fas fa-info-circle"></i> Details
+                    </button>
+                    <a
+                      href="https://getultrablu.com/"
+                      class="btn btn-light btn-sm"
+                      target="_blank"
+                    >
+                      <i class="fas fa-link"></i> Live Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info d-flex flex-column">
+                <h3 role="heading" aria-level="3">
+                  Ping-pong game logic in Shopify Theme
+                </h3>
+                <p class="flex-grow-1">
+                  I received a Figma design and developed a Ping Pong game based
+                  on it, ensuring it was optimized...
+                </p>
+                <div class="project-tags mt-auto">
+                  <span class="badge bg-primary">Shopify</span>
+                  <span class="badge bg-primary">JavaScript</span>
+                  <span class="badge bg-primary">Liquid</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 (Simple Terms and Policy Example) -->
+          <div class="col-md-6 col-lg-4 project-item design-to-code">
+            <div
+              class="project-card h-100"
+              role="article"
+              aria-label="Simple Terms and Policy"
+              data-project-title="Simple Terms and Policy"
+              data-project-role="Frontend Developer"
+              data-project-description="I received image examples of the page and converted them into a multi-language website. Instead of creating separate HTML files for each language, I implemented a dynamic text rendering system using JavaScript. Content was provided in a Word document which I transformed into a structured data format. This approach allowed for instant language switching without page reloads, resulting in faster load times and better user experience. The focus was on mobile responsiveness and performance."
+              data-project-tasks="Convert design mockups,Implement multi-language support,Structure content data,Create dynamic text rendering,Optimize page performance,Cross-browser testing,Optimize mobile responsiveness"
+              data-project-tech="JavaScript,HTML,CSS, Bootstrap"
+              data-project-github="https://github.com/Edin-Durak/shift-platform"
+              data-project-demo="https://edin-durak.github.io/shift-platform/"
+            >
+              <div
+                class="project-image"
+                role="img"
+                aria-label="Thumbnail of a Simple Terms and Policy"
+              >
+                <img
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  data-src="./assets/images/Shift-thumbnail.jpg"
+                  alt="Shift Platform"
+                  class="img-fluid lazy"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <button
+                      class="btn btn-light btn-sm me-2 view-project"
+                      aria-label="View project details"
+                    >
+                      <i class="fas fa-info-circle"></i> Details
+                    </button>
+                    <a
+                      href="https://edin-durak.github.io/shift-platform/"
+                      class="btn btn-light btn-sm"
+                      target="_blank"
+                    >
+                      <i class="fas fa-link"></i> Live Demo
+                    </a>
+                    <a
+                      href="https://github.com/Edin-Durak/shift-platform"
+                      class="btn btn-light btn-sm"
+                      target="_blank"
+                      aria-label="View GitHub repository"
+                    >
+                      <i class="fas fa-link"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info d-flex flex-column">
+                <h3 role="heading" aria-level="3">Simple Terms and Policy</h3>
+                <p class="flex-grow-1">
+                  I received image examples of the page and converted them into
+                  a multi-language website...
+                </p>
+                <div class="project-tags mt-auto">
+                  <span class="badge bg-primary">JavaScript</span>
+                  <span class="badge bg-primary">HTML</span>
+                  <span class="badge bg-primary">CSS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 (CampGuest Booking App Example) -->
+          <div class="col-md-6 col-lg-4 project-item maintenance">
+            <div
+              class="project-card h-100"
+              role="article"
+              aria-label="CampGuest Booking App"
+              data-project-title="CampGuest Booking App"
+              data-project-role="Frontend Developer - Redesign"
+              data-project-description="Worked on redesigning an existing web application to give it a fresh, modern look while improving responsiveness across all devices. Using Chrome DevTools for efficient debugging and quick CSS modifications, I was able to rapidly identify and fix styling issues. The redesign included updating layouts, color schemes, and components to create a more polished and professional appearance. Special attention was paid to mobile responsiveness to ensure a seamless experience on all screen sizes."
+              data-project-tasks="Redesigned the web application,Improved responsiveness across all devices,Fixed styling issues,Updated layouts,Color schemes,Components,Mobile responsiveness"
+              data-project-tech="HTML,CSS,Chrome DevTools"
+              data-project-demo="https://campguest.com/camp/ugljan/"
+            >
+              <div
+                class="project-image"
+                role="img"
+                aria-label="Thumbnail of a CampGuest Booking App"
+              >
+                <img
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  data-src="./assets/images/CampGuest-thumbnail.jpg"
+                  alt="CampGuest Booking App"
+                  class="img-fluid lazy"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <button
+                      class="btn btn-light btn-sm me-2 view-project"
+                      aria-label="View project details"
+                    >
+                      <i class="fas fa-info-circle"></i> Details
+                    </button>
+                    <a
+                      href="https://campguest.com/camp/ugljan/"
+                      class="btn btn-light btn-sm"
+                      target="_blank"
+                    >
+                      <i class="fas fa-link"></i> Live Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info d-flex flex-column">
+                <h3 role="heading" aria-level="3">CampGuest Booking App</h3>
+                <p class="flex-grow-1">
+                  Worked on redesigning an existing web application to give it a
+                  fresh, modern look while improving...
+                </p>
+                <div class="project-tags mt-auto">
+                  <span class="badge bg-primary">HTML</span>
+                  <span class="badge bg-primary"> CSS</span>
+                  <span class="badge bg-primary">Chrome DevTools</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7 (Lander ProjectExample) -->
+          <div class="col-md-6 col-lg-4 project-item design-to-code">
+            <div
+              class="project-card h-100"
+              role="article"
+              aria-label="Lander Project"
+              data-project-title="Lander Project"
+              data-project-role="Frontend Developer"
+              data-project-description="This was my first Figma to HTML/CSS conversion project on Upwork. The client provided 6 different design images and needed them to display responsively based on screen width. Using media queries and rem units, I ensured the design adapted seamlessly across all devices. I provided quick turnaround time and the client was very satisfied with the pixel-perfect implementation and smooth responsive behavior. The project helped establish my reputation on Upwork."
+              data-project-tasks="Converted Figma designs,Implemented responsive design,Adapted to different screen sizes,Provided quick turnaround,Client satisfaction"
+              data-project-tech="HTML,CSS,Figma"
+              data-project-github="https://github.com/Edin-Durak/Lander-project"
+              data-project-demo="https://edin-durak.github.io/Lander-project/"
+            >
+              <div
+                class="project-image"
+                role="img"
+                aria-label="Thumbnail of a Lander Project"
+              >
+                <img
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  data-src="./assets/images/Lander-thumbnail.jpg"
+                  alt="Lander Project"
+                  class="img-fluid lazy"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <button
+                      class="btn btn-light btn-sm me-2 view-project"
+                      aria-label="View project details"
+                    >
+                      <i class="fas fa-info-circle"></i> Details
+                    </button>
+                    <a
+                      href="https://edin-durak.github.io/Lander-project/"
+                      class="btn btn-light btn-sm"
+                      target="_blank"
+                      aria-label="View live demo"
+                    >
+                      <i class="fas fa-link"></i> Live Demo
+                    </a>
+                    <a
+                      href="https://github.com/Edin-Durak/Lander-project"
+                      class="btn btn-light btn-sm"
+                      target="_blank"
+                      aria-label="View GitHub repository"
+                    >
+                      <i class="fas fa-link"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info d-flex flex-column">
+                <h3 role="heading" aria-level="3">Lander Project</h3>
+                <p class="flex-grow-1">
+                  Using media queries and rem units, I ensured the design
+                  adapted seamlessly across all devices...
+                </p>
+                <div class="project-tags mt-auto">
+                  <span class="badge bg-primary">HTML</span>
+                  <span class="badge bg-primary"> CSS</span>
+                  <span class="badge bg-primary">Figma</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 8 (Shopware Project) -->
+          <div class="col-md-6 col-lg-4 project-item shopware">
+            <div
+              class="project-card h-100"
+              role="article"
+              aria-label="Shopware Theme changes"
+              data-project-title="Shopware Theme changes"
+              data-project-role="Shopware Frontend Developer"
+              data-project-description="This was my first project with Shopware. Despite having no prior experience, I implemented the desired changes to the theme of the MP-Sensor website. By utilizing Shopware documentation, official tutorials, and learning Twig syntax, I delivered quality work. The goal was to redesign the header, footer, and landing page cards. Since Shopware uses Bootstrap and SCSS, I followed the 7-1 architectural pattern for my styles."
+              data-project-tasks="Implemented desired changes,Utilized Shopware documentation,Followed 7-1 architectural pattern,Delivered quality work"
+              data-project-tech="Shopware,SCSS,Bootstrap,Twig"
+              data-project-demo="https://www.mp-sensor.de/"
+            >
+              <div
+                class="project-image"
+                role="img"
+                aria-label="Thumbnail of a Shopware Theme changes"
+              >
+                <img
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  data-src="./assets/images/MP-sensor-thumbnail.jpg"
+                  alt="Shopware Theme changes"
+                  class="img-fluid lazy"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <button
+                      class="btn btn-light btn-sm me-2 view-project"
+                      aria-label="View project details"
+                    >
+                      <i class="fas fa-info-circle"></i> Details
+                    </button>
+                    <a
+                      href="https://www.mp-sensor.de/"
+                      class="btn btn-light btn-sm"
+                      target="_blank"
+                      aria-label="View live demo"
+                    >
+                      <i class="fas fa-link"></i> Live Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info d-flex flex-column">
+                <h3 role="heading" aria-level="3">Shopware Theme</h3>
+                <p class="flex-grow-1">
+                  This was my first project with Shopware. Despite having no
+                  prior experience, I implemented the...
+                </p>
+                <div class="project-tags mt-auto">
+                  <span class="badge bg-primary">Shopware</span>
+                  <span class="badge bg-primary">SCSS</span>
+                  <span class="badge bg-primary">Twig</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 9 (Weather App) -->
+          <div class="col-md-6 col-lg-4 project-item other">
+            <div
+              class="project-card h-100"
+              role="article"
+              aria-label="Weather App"
+              data-project-title="Weather App"
+              data-project-role="Frontend Developer"
+              data-project-description="A dynamic weather application built with vanilla JavaScript that provides real-time weather information using the OpenWeatherMap API. Features include current weather conditions, 5-day forecast, temperature unit conversion (Celsius/Fahrenheit), and dynamic backgrounds that change based on weather conditions. The app also includes a search functionality for any city worldwide and displays key weather metrics like temperature, humidity, wind speed, and weather description."
+              data-project-tasks="Implemented real-time weather data fetching, Added 5-day forecast feature, Created temperature unit conversion, Implemented city search functionality, Added dynamic weather-based backgrounds"
+              data-project-tech="JavaScript,HTML,CSS,Bootstrap,API"
+              data-project-github="https://github.com/Edin-Durak/Weather-App"
+              data-project-vimeo="https://vimeo.com/1055041422/405ddb515f"
+            >
+              <div
+                class="project-image"
+                role="img"
+                aria-label="Thumbnail of a Weather App"
+              >
+                <img
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  data-src="./assets/images/Weather-app-thumbnail.jpg"
+                  alt="Weather App Thumbnail"
+                  class="img-fluid lazy"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <div
+                    class="project-links d-flex justify-content-center flex-wrap gap-2"
+                  >
+                    <button
+                      class="btn btn-light btn-sm me-2 view-project"
+                      aria-label="View project details"
+                    >
+                      <i class="fas fa-info-circle"></i> Details
+                    </button>
+                    <button
+                      class="btn btn-light btn-sm watch-demo"
+                      aria-label="Watch project demo"
+                    >
+                      <i class="fas fa-play-circle"></i> Watch Demo
+                    </button>
+                    <a
+                      href="https://github.com/Edin-Durak/Weather-App"
+                      class="btn btn-light btn-sm"
+                      target="_blank"
+                      aria-label="View GitHub repository"
+                    >
+                      <i class="fas fa-link"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info d-flex flex-column">
+                <h3 role="heading" aria-level="3">Weather App</h3>
+                <p class="flex-grow-1">
+                  A dynamic weather application built with vanilla JavaScript
+                  that provides real-time weather...
+                </p>
+                <div class="project-tags mt-auto">
+                  <span class="badge bg-primary">JavaScript</span>
+                  <span class="badge bg-primary">HTML</span>
+                  <span class="badge bg-primary">CSS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 10 (Screen Refurbished Project) -->
+          <div class="col-md-6 col-lg-4 project-item design-to-code">
+            <div
+              class="project-card h-100"
+              role="article"
+              aria-label="Screen Refurbished Project"
+              data-project-title="Screen Refurbished Project"
+              data-project-role="Frontend Developer"
+              data-project-description="A screen refurbishment project focused on creating a responsive website for a screen repair business. The site features a clean, modern design with a user-friendly interface that showcases repair services, pricing, and contact information. Built with vanilla JavaScript, HTML, and CSS, the project implements responsive design principles and Bootstrap components for optimal viewing across all devices. Key features include a dynamic service catalog, contact form integration, and smooth scrolling navigation."
+              data-project-tasks="Create responsive website,Implement service catalog,Build contact form,Add smooth scrolling,Optimize for mobile,Cross-browser testing,Deploy to production"
+              data-project-tech="HTML,CSS,JavaScript, Figma"
+              data-project-github="https://github.com/Edin-Durak/Screen-Refurbished"
+              data-project-demo="https://edin-durak.github.io/Screen-Refurbished/"
+            >
+              <div
+                class="project-image"
+                role="img"
+                aria-label="Thumbnail of a Screen Refurbished Project"
+              >
+                <img
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  data-src="./assets/images/Screen-reburbished-thumbnail.jpg"
+                  alt="Screen Refurbished Project"
+                  class="img-fluid lazy"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <button
+                      class="btn btn-light btn-sm me-2 view-project"
+                      aria-label="View project details"
+                    >
+                      <i class="fas fa-info-circle"></i> Details
+                    </button>
+                    <a
+                      href="https://edin-durak.github.io/Screen-Refurbished/"
+                      class="btn btn-light btn-sm"
+                      target="_blank"
+                      aria-label="View live demo"
+                    >
+                      <i class="fas fa-link"></i> Live Demo
+                    </a>
+                    <a
+                      href="https://github.com/Edin-Durak/Screen-Refurbished"
+                      class="btn btn-light btn-sm"
+                      target="_blank"
+                      aria-label="View GitHub repository"
+                    >
+                      <i class="fas fa-link"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info d-flex flex-column">
+                <h3 role="heading" aria-level="3">
+                  Screen Refurbished Project
+                </h3>
+                <p class="flex-grow-1">
+                  A screen refurbishment project focused on creating a
+                  responsive website for a screen repair business...
+                </p>
+                <div class="project-tags mt-auto">
+                  <span class="badge bg-primary">HTML</span>
+                  <span class="badge bg-primary">CSS</span>
+                  <span class="badge bg-primary">JavaScript</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 11 (SigmaDev Project) -->
+          <div class="col-md-6 col-lg-4 project-item design-to-code">
+            <div
+              class="project-card h-100"
+              role="article"
+              aria-label="SigmaDev Project"
+              data-project-title="SigmaDev Project"
+              data-project-role="Frontend Developer"
+              data-project-description="A software development agency website built from a Figma design provided by a friend for practice purposes. The project focuses on accurately replicating the design while ensuring responsiveness across all devices. Built with vanilla HTML, CSS and JavaScript without frameworks, it follows a desktop-first approach targeting corporate clients. The site features locally stored Google fonts, optimized SEO meta tags, custom animations, smooth scrolling, and a responsive layout that adapts seamlessly between desktop and mobile views. The implementation demonstrates clean code organization and modern development best practices."
+              data-project-tasks="Accurately replicate design,Ensure responsiveness,Desktop-first approach,Locally stored Google fonts,Optimized SEO meta tags,Custom animations,Smooth scrolling,Responsive layout,Clean code organization,Modern development best practices"
+              data-project-tech="HTML,CSS,JavaScript, Figma"
+              data-project-github="https://github.com/Edin-Durak/SigmaDev"
+              data-project-demo="https://edin-durak.github.io/SigmaDev/"
+            >
+              <div
+                class="project-image"
+                role="img"
+                aria-label="Thumbnail of a SigmaDev Project"
+              >
+                <img
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  data-src="./assets/images/SigmaDev-thumbnail.jpg"
+                  alt="SigmaDev Project"
+                  class="img-fluid lazy"
+                  loading="lazy"
+                />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <button
+                      class="btn btn-light btn-sm me-2 view-project"
+                      aria-label="View project details"
+                    >
+                      <i class="fas fa-info-circle"></i> Details
+                    </button>
+                    <a
+                      href="https://edin-durak.github.io/SigmaDev/"
+                      class="btn btn-light btn-sm"
+                      target="_blank"
+                      aria-label="View live demo"
+                    >
+                      <i class="fas fa-link"></i> Live Demo
+                    </a>
+                    <a
+                      href="https://github.com/Edin-Durak/SigmaDev"
+                      class="btn btn-light btn-sm"
+                      target="_blank"
+                      aria-label="View GitHub repository"
+                    >
+                      <i class="fas fa-link"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info d-flex flex-column">
+                <h3 role="heading" aria-level="3">SigmaDev Project</h3>
+                <p class="flex-grow-1">
+                  A software development agency website built from a Figma
+                  design provided by a friend for practice...
+                </p>
+                <div class="project-tags mt-auto">
+                  <span class="badge bg-primary">HTML</span>
+                  <span class="badge bg-primary">CSS</span>
+                  <span class="badge bg-primary">Figma</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more project cards following the same pattern -->
+        </div>
+      </div>
+
+      <!-- Single Modal Template for All Projects -->
+      <div
+        class="modal fade"
+        id="projectModal"
+        tabindex="-1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title" id="projectModalTitle"></h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-12">
+                  <h4>My Role</h4>
+                  <p class="modal-project-role"></p>
+
+                  <h4>Project Description</h4>
+                  <p class="modal-project-description"></p>
+
+                  <h4>Key Tasks</h4>
+                  <ul class="modal-project-tasks"></ul>
+
+                  <h4>Technologies Used</h4>
+                  <div class="modal-project-tech d-flex flex-wrap gap-2"></div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <div class="modal-project-links d-flex flex-wrap gap-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Modal -->
+      <div class="modal fade" id="videoModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Project Demo</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body p-0">
+              <div class="ratio ratio-16x9">
+                <iframe src="" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Let's Work Together</h2>
+
+        <!-- Main Contact Content -->
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8">
+            <div class="text-center mb-5">
+              <p class="lead">
+                Looking for a frontend developer who can bring your vision to
+                life? I specialize in creating responsive, user-friendly
+                websites with clean, maintainable code.
+              </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="row g-4 mb-5">
+              <div class="col-md-6">
+                <div class="contact-service-card">
+                  <div class="card-icon mb-3">
+                    <i class="fas fa-code"></i>
+                  </div>
+                  <h3 class="h5 mb-3">Development Services</h3>
+                  <p>
+                    Need a new website or want to improve your existing one?
+                    Let's discuss your project requirements.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="contact-service-card">
+                  <div class="card-icon mb-3">
+                    <i class="fas fa-search"></i>
+                  </div>
+                  <h3 class="h5 mb-3">Free Website Review</h3>
+                  <p>
+                    Get a comprehensive review of your website's UI/UX,
+                    responsiveness, and performance optimization.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Links -->
+            <div
+              class="contact-links d-flex justify-content-center flex-wrap gap-3 mb-5"
+            >
+              <a
+                href="mailto:edindurak8@gmail.com"
+                class="btn btn-primary btn-lg"
+                aria-label="Email me"
+              >
+                <i class="fas fa-envelope me-2"></i>Email
+              </a>
+              <a
+                href="https://www.linkedin.com/in/edin-durak-bb9ba41b4/"
+                target="_blank"
+                class="btn btn-info btn-lg"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin me-2"></i>LinkedIn
+              </a>
+              <a
+                href="https://www.upwork.com/freelancers/~013a860aabfa89c4b2"
+                target="_blank"
+                class="btn btn-success btn-lg"
+                aria-label="Upwork"
+              >
+                <i class="fab fa-upwork me-2"></i>Upwork
+              </a>
+              <a
+                href="https://github.com/Edin-Durak"
+                target="_blank"
+                class="btn btn-dark btn-lg"
+                aria-label="GitHub"
+              >
+                <i class="fab fa-github me-2"></i>GitHub
+              </a>
+            </div>
+
+            <!-- Availability Notice -->
+            <div class="text-center">
+              <p class="availability-notice">
+                <i class="fas fa-clock me-2 text-success"></i>Available for
+                freelance opportunities and collaborations
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
