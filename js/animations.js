@@ -8,36 +8,44 @@ window.addEventListener("load", () => {
   loader.style.display = "none";
 
   // Initial hero animation
-  gsap.from("#hero h1", {
-    duration: 1,
-    y: 100,
-    opacity: 0,
-    ease: "power4.out",
-  });
-
-  gsap.from("#hero p", {
-    duration: 1,
-    y: 50,
-    opacity: 0,
-    ease: "power4.out",
-    delay: 0.2,
-  });
-
-  gsap.from("#hero .btn", {
-    duration: 1,
-    y: 50,
-    opacity: 0,
-    ease: "power4.out",
-    delay: 0.4,
-  });
-
-  gsap.from("#hero .hero-main-image", {
-    duration: 1.2,
-    x: 100,
-    opacity: 0,
-    ease: "power4.out",
-    delay: 0.6,
-  });
+  gsap
+    .timeline()
+    .from("#hero h1", {
+      duration: 1,
+      y: 100,
+      opacity: 0,
+      ease: "power4.out",
+    })
+    .from(
+      "#hero p",
+      {
+        duration: 1,
+        y: 50,
+        opacity: 0,
+        ease: "power4.out",
+      },
+      "-=0.8"
+    )
+    .from(
+      "#hero .btn",
+      {
+        duration: 1,
+        y: 50,
+        opacity: 0,
+        ease: "power4.out",
+      },
+      "-=0.8"
+    )
+    .from(
+      "#hero .hero-main-image",
+      {
+        duration: 1.2,
+        x: 100,
+        opacity: 0,
+        ease: "power4.out",
+      },
+      "-=0.8"
+    );
 
   // Initialize scroll-based animations
   initScrollAnimations();

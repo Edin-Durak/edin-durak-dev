@@ -45,6 +45,52 @@
       crossorigin="anonymous"
       defer
     ></script>
+
+    <!-- Font Preload -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Edin Durak | Frontend Developer" />
+    <meta
+      name="description"
+      content="Frontend developer specializing in creating modern digital solutions that help companies evolve and succeed in today's fast-paced digital landscape."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://edin-durak-dev.vercel.app/" />
+    <meta property="og:title" content="Edin Durak | Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Frontend developer specializing in creating modern digital solutions that help companies evolve and succeed in today's fast-paced digital landscape."
+    />
+    <meta
+      property="og:image"
+      content="https://edin-durak-dev.vercel.app/assets/images/preview.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://edin-durak-dev.vercel.app/" />
+    <meta property="twitter:title" content="Edin Durak | Frontend Developer" />
+    <meta
+      property="twitter:description"
+      content="Frontend developer specializing in creating modern digital solutions that help companies evolve and succeed in today's fast-paced digital landscape."
+    />
+    <meta
+      property="twitter:image"
+      content="https://edin-durak-dev.vercel.app/assets/images/preview.jpg"
+    />
   </head>
   <body class="light-mode">
     <!-- Loading Animation -->
@@ -135,6 +181,9 @@
               src="./assets/images/programming.svg"
               alt="Programming Illustration"
               class="hero-main-image programming img-fluid"
+              width="600"
+              height="450"
+              fetchpriority="high"
             />
           </div>
         </div>
@@ -430,6 +479,18 @@
                     data-bs-slide-to="4"
                     aria-label="Slide 5"
                   ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide-to="5"
+                    aria-label="Slide 6"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#testimonialCarousel"
+                    data-bs-slide-to="6"
+                    aria-label="Slide 7"
+                  ></button>
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -567,6 +628,56 @@
                       </div>
                     </div>
                   </div>
+
+                  <div class="carousel-item">
+                    <div class="testimonial-card">
+                      <div class="testimonial-content">
+                        <div class="rating mb-3">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-text-wrapper">
+                          <p class="testimonial-text">
+                            "Edin did an amazing job. Extremely familiar with
+                            javascript. Would work with again, thank you! A++"
+                          </p>
+                        </div>
+                        <div class="testimonial-author">
+                          <h3>Jason P.</h3>
+                          <p class="mb-0">JavaScript Development</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="testimonial-card">
+                      <div class="testimonial-content">
+                        <div class="rating mb-3">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-text-wrapper">
+                          <p class="testimonial-text">
+                            "Edin is a very talented web designer and coder. He
+                            is a great communicator and was always very quick to
+                            respond. I will hire Edin again for future
+                            projects."
+                          </p>
+                        </div>
+                        <div class="testimonial-author">
+                          <h3>David O.</h3>
+                          <p class="mb-0">Web Design & Development</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="carousel-controls">
@@ -590,6 +701,21 @@
                   </button>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-cta text-center">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <h3 class="mb-4">Join Our Satisfied Clients</h3>
+              <p class="lead mb-4">
+                Ready to transform your digital presence? Let's create something
+                amazing together.
+              </p>
+              <a href="#contact" class="btn btn-primary btn-lg">
+                <i class="fas fa-handshake me-2"></i>Start Your Project
+              </a>
             </div>
           </div>
         </div>
