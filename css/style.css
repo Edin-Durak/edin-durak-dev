@@ -383,6 +383,7 @@ section {
 
 .carousel-control-prev,
 .carousel-control-next {
+  pointer-events: auto; /* Re-enable touches for buttons */
   width: 40px;
   height: 40px;
   background: var(--primary-color);
