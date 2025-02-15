@@ -309,29 +309,40 @@ section {
 
 .testimonial-text {
   font-size: 1.1rem;
-  color: var();
+  color: var(--text-color);
   line-height: 1.8;
   margin: 1.5rem 0;
   font-style: italic;
-  max-height: 200px; /* Maximum height for longer testimonials */
-  overflow-y: auto; /* Adds scroll for very long content */
+  max-height: 200px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
   scrollbar-width: thin;
   padding: 0 10px;
+  /* Add momentum-based scrolling for iOS */
+  -webkit-overflow-scrolling: touch;
 }
 
-/* Style scrollbar for webkit browsers */
+/* Style scrollbar for webkit browsers (Chrome, Safari, iOS) */
 .testimonial-text::-webkit-scrollbar {
   width: 6px;
+  -webkit-appearance: none;
 }
 
 .testimonial-text::-webkit-scrollbar-track {
   background: #f1f1f1;
   border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial-text::-webkit-scrollbar-thumb {
   background: var(--primary-color);
   border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+/* For Firefox */
+.testimonial-text {
+  scrollbar-color: var(--primary-color) #f1f1f1;
 }
 
 /* Update carousel container */
