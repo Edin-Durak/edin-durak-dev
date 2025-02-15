@@ -569,6 +569,7 @@ section {
 .project-info p {
   height: 4.8em; /* Approximately 3 lines of text */
   margin-bottom: 1rem;
+  overflow: hidden;
 }
 .project-tags {
   display: flex;
@@ -733,9 +734,6 @@ section {
   box-shadow: 0 5px 15px rgba(45, 70, 185, 0.15);
 }
 
-@media (max-width: 768px) {
-}
-
 /* Scroll to Top Button */
 .scroll-to-top {
   display: none;
@@ -882,10 +880,6 @@ section {
   }
   .project-card .project-image:hover .project-overlay {
     opacity: 1;
-  }
-
-  .project-info p {
-    overflow: hidden;
   }
 
   .contact-service-card {
