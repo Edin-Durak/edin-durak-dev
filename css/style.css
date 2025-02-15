@@ -378,6 +378,7 @@ section {
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
+  pointer-events: none; /* Allow touches to pass through */
 }
 
 .carousel-control-prev,
@@ -819,17 +820,24 @@ section {
     padding: 2rem;
     margin: 0.5rem;
   }
+  .testimonial-content {
+    height: 500px;
+  }
+
+  .testimonial-text {
+    height: auto;
+  }
   .carousel-controls {
     top: auto;
     bottom: -15px;
-  }
-  .carousel-control-prev {
-    left: 0;
+    transform: none;
   }
 
+  .carousel-control-prev,
   .carousel-control-next {
-    right: 0;
+    display: none;
   }
+
   .testimonial-cta {
     padding: 1.5rem 0;
   }
@@ -873,6 +881,10 @@ section {
   }
   .project-card .project-image:hover .project-overlay {
     opacity: 1;
+  }
+
+  .project-info p {
+    overflow: hidden;
   }
 
   .contact-service-card {
