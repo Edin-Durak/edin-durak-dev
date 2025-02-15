@@ -217,4 +217,19 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", setActiveLink);
   // Call once on load
   setActiveLink();
+
+  // Add this to your existing JavaScript
+  const aboutModal = document.getElementById("aboutModal");
+  const modalCloseButton = aboutModal.querySelector(".btn-close");
+  const modalOpenButton = document.querySelector(
+    '[data-bs-target="#aboutModal"]'
+  );
+
+  aboutModal.addEventListener("shown.bs.modal", () => {
+    modalCloseButton.focus();
+  });
+
+  aboutModal.addEventListener("hidden.bs.modal", () => {
+    modalOpenButton.focus();
+  });
 });

@@ -112,3 +112,37 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   });
 });
+
+// Close mobile nav when clicking links
+const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+const navbarCollapse = document.querySelector(".navbar-collapse");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    if (window.innerWidth < 992) {
+      // Bootstrap's lg breakpoint
+      const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+      bsCollapse.hide();
+    }
+  });
+});
+
+// Scroll to top functionality
+const scrollToTopBtn = document.getElementById("scrollToTop");
+
+window.addEventListener("scroll", () => {
+  if (window.innerWidth <= 768) {
+    if (window.pageYOffset > 300) {
+      scrollToTopBtn.classList.add("visible");
+    } else {
+      scrollToTopBtn.classList.remove("visible");
+    }
+  }
+});
+
+scrollToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
