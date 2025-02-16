@@ -551,6 +551,13 @@ section {
 .project-card:hover .project-overlay {
   opacity: 1;
 }
+.project-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
 
 .project-links .btn {
   margin: 0 0.5rem;
@@ -820,9 +827,13 @@ section {
     margin: 0.5rem;
   }
   .testimonial-content {
-    height: 500px;
-  }
+    height: 350px;
 
+    gap: 0.5rem;
+  }
+  .testimonial-card .testimonial-text-wrapper {
+    flex-grow: 0;
+  }
   .testimonial-text {
     height: auto;
   }
