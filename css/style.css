@@ -855,10 +855,8 @@ section {
     margin-bottom: 0rem;
   }
 
-  .badges-wrapper {
-    .badge {
-      min-width: 220px;
-    }
+  .badges-wrapper .badge {
+    min-width: 220px;
   }
 
   .testimonial-card {
