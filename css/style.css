@@ -142,6 +142,28 @@ section {
   max-width: 700px;
 }
 
+/* Hero Success Badges */
+.hero-success-badges {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-success-badges .badge {
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.hero-success-badges .badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hero-success-badges .badge i {
+  font-size: 0.9rem;
+}
+
 .highlight-word {
   position: relative;
   display: inline-block;
@@ -171,6 +193,17 @@ section {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
