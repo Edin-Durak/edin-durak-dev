@@ -856,7 +856,7 @@ section {
   }
 
   .badges-wrapper .badge {
-    min-width: 220px;
+    width: 220px;
   }
 
   .testimonial-card {
